@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 namespace heist_part_two
 {
@@ -9,7 +10,7 @@ namespace heist_part_two
 
         public void PerformSkill(Bank bank)
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine();
         }
 
     }

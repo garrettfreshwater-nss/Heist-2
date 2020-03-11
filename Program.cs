@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace heist_part_two
 {
@@ -10,16 +11,29 @@ namespace heist_part_two
             Muscle Garrett = new Muscle();
             LockSpecialist Holden = new LockSpecialist();
 
-            Bank.AlarmScore = BankAlarm
+            var Rolodex = name List<IRobber>;
 
-            // var Bank.SecurityGuardScore = 50
+            // Bank.AlarmScore = BankAlarm
+
+            int AlarmScore = 50;
 
             while (true)
             {
-
+                try
+                {
+                    Console.Write("What is the bank difficulty? ");
+                    var userInput = Console.ReadLine();
+                    AlarmScore = int.Parse(userInput);
+                    var taco = 100 / AlarmScore;
+                    break;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Oops something went wrong");
+                }
             }
 
-            Console.WriteLine(Willy);
+            Console.WriteLine($"The difficulty is {AlarmScore}");
         }
     }
 }
